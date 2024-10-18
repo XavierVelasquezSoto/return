@@ -1,37 +1,33 @@
-
-
 function hello(name){
     return 'Hola' + name;
   }
   
-  const resultName = hello(' Xavier');
-  console.log(resultName);
+const resultName = hello(' Xavier');
+console.log(resultName);
   
-  //
+
   
-  function squareArea(side){
+function squareArea(side){
     return (side * side);
-  }
+}
+ 
+const resultSquare = squareArea(5,5);
+console.log(resultSquare);
+  
+
+  
+function triangleArea(base, height){
+  return base * height / 2;
+}
+  
+const resultTriangle = triangleArea(2,4);
+console.log(resultTriangle);
   
   
-  const resultSquare = squareArea(5,5);
-  console.log(resultSquare);
-  
-  //
-  
-  function triangleArea(base, height){
-    return base * height / 2;
-  }
-  
-  const resultTriangle = triangleArea(2,4);
-  console.log(resultTriangle);
-  
-  //
-  
-  function circleArea (radius){
+function circleArea (radius){
     const pi = 3.14;
     return pi * radius * radius;
-  }
+}
   
   const resultCircle = circleArea(14)
   console.log(resultCircle)
@@ -65,16 +61,14 @@ function hello(name){
   const resultPrice = allPrice(100);
   console.log(resultPrice);
   
+   
   
-  //
+function message(name,material,size,note){
+  return name + ' ha pedido una caja de ' + material + ', de tamaño ' + size + '. ' + note + ', es frágil';
+}
   
-  
-  function message(name,material,size,note){
-    return name + ' ha pedido una caja de ' + material + ', de tamaño ' + size + '. ' + note + ', es frágil';
-  }
-  
-  const resultMessage = message('Xavier','metal','standard','Cuidado');
-  console.log(resultMessage);
+const resultMessage = message('Xavier','metal','standard','Cuidado');
+console.log(resultMessage);
   
   
 
@@ -109,9 +103,7 @@ function hi(name,age) {
   resultHi = hi('jorge',10);
   console.log(resultHi);
   
-  
-  //
-  
+
   
   /* 
   function hightest(numberA, numberB) {
@@ -138,10 +130,6 @@ function hi(name,age) {
   const resultHigh = high(9,3);
   console.log(resultHigh);
   
-  
-  
-  
-  //
   
   
   /* 
@@ -314,7 +302,7 @@ function hi(name,age) {
   */
   
   function nameYear(a){
-    if ((a % 4 === 0 && a % 100 !== 0) || a % 400 === 0){
+  if ((a % 4 === 0 && a % 100 !== 0) || a % 400 === 0){
       return 'Es un año bisiesto';
     }else{
       return 'No es un año bisiesto'
@@ -327,7 +315,7 @@ function hi(name,age) {
   console.log(resultYear);        //Es un año bisiesto
 
 
-//
+
 
 /*  
 
@@ -380,3 +368,31 @@ function twoDigit(a,b){
 
 resultTwo = twoDigit(12,4);
 console.log(resultTwo)
+
+/*  
+function doubleNumber(a,b){
+  if(a === 2*b){
+    console.log(a + ' es el doble ' + b);
+  }else if (b === 2*a){
+    console.log(b + ' es el doble de ' + a);
+  }else{
+    console.log('Ninguno es el doble del otro');
+  }
+}
+
+doubleNumber(15,30);
+
+*/
+
+function doubleNumber(a,b){
+  if (a === 2*b){
+    return a + ' es el doble ' + b;
+  }else if (b === 2*a){
+    return b + ' es el doble de ' + a;
+  }else {
+    return 'Ninguno es el doble del otro';
+  }
+}
+
+resultDouble = doubleNumber(30,15);
+console.log(resultDouble);
