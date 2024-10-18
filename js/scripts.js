@@ -1,77 +1,66 @@
-function hello(name){
-    return 'Hola' + name;
-  }
-  
+function hello(name) {
+  return 'Hola' + name;
+}
+
 const resultName = hello(' Xavier');
 console.log(resultName);
-  
 
-  
-function squareArea(side){
-    return (side * side);
+function squareArea(side) {
+  return side * side;
 }
- 
-const resultSquare = squareArea(5,5);
+
+const resultSquare = squareArea(5, 5);
 console.log(resultSquare);
-  
 
-  
-function triangleArea(base, height){
-  return base * height / 2;
+function triangleArea(base, height) {
+  return (base * height) / 2;
 }
-  
-const resultTriangle = triangleArea(2,4);
+
+const resultTriangle = triangleArea(2, 4);
 console.log(resultTriangle);
-  
-  
-function circleArea (radius){
-    const pi = 3.14;
-    return pi * radius * radius;
+
+function circleArea(radius) {
+  const pi = 3.14;
+  return pi * radius * radius;
 }
-  
-  const resultCircle = circleArea(14)
-  console.log(resultCircle)
-  
-  //
-  
-  function calculateCelsius(celsius){
-    return celsius * 1.8 + 32;
-  }
-  
-  const resultCelsius = calculateCelsius(100);
-  console.log(resultCelsius);
-  
-  //
-  
-  function calculateFahrenheit(fahrenheit){
-    return (fahrenheit - 32) / 1.8;
-  }
-  
-  const resultFahrenheit = calculateFahrenheit(212);
-  console.log(resultFahrenheit);
-  
-  //
-  
-  
-  function allPrice(price){
-    const iva = 0.21;
-    return price + price * iva;
-  }
-  
-  const resultPrice = allPrice(100);
-  console.log(resultPrice);
-  
-   
-  
-function message(name,material,size,note){
+
+const resultCircle = circleArea(14);
+console.log(resultCircle);
+
+//
+
+function calculateCelsius(celsius) {
+  return celsius * 1.8 + 32;
+}
+
+const resultCelsius = calculateCelsius(100);
+console.log(resultCelsius);
+
+//
+
+function calculateFahrenheit(fahrenheit) {
+  return (fahrenheit - 32) / 1.8;
+}
+
+const resultFahrenheit = calculateFahrenheit(212);
+console.log(resultFahrenheit);
+
+//
+
+function allPrice(price) {
+  const iva = 0.21;
+  return price + price * iva;
+}
+
+const resultPrice = allPrice(100);
+console.log(resultPrice);
+
+function message(name, material, size, note) {
   return name + ' ha pedido una caja de ' + material + ', de tamaño ' + size + '. ' + note + ', es frágil';
 }
-  
-const resultMessage = message('Xavier','metal','standard','Cuidado');
-console.log(resultMessage);
-  
-  
 
+const resultMessage = message('Xavier', 'metal', 'standard', 'Cuidado');
+console.log(resultMessage);
 
 /* 
 function hello(name, age) {
@@ -86,26 +75,20 @@ hello('Xavier', 8);
 hello('Jorge', 32);
  */
 
-function hi(name,age) {
-  
-    if (age < 18){ 
-      return 'Hola ' + name + ', eres menor de edad';
-    }
-    else {
-      return 'Hola ' + name + ', eres mayor de edad';
-    }
-    
-  
+function hi(name, age) {
+  if (age < 18) {
+    return 'Hola ' + name + ', eres menor de edad';
+  } else {
+    return 'Hola ' + name + ', eres mayor de edad';
   }
-  
-  resultHi = hi('Xavier',19);
-  console.log(resultHi);
-  resultHi = hi('jorge',10);
-  console.log(resultHi);
-  
+}
 
-  
-  /* 
+const resultHi = hi('Xavier', 10);
+console.log(resultHi);
+const resultHi2 = hi('Jorge', 19);
+console.log(resultHi2);
+
+/* 
   function hightest(numberA, numberB) {
     if (numberA > numberB) {
       console.log(numberA);
@@ -116,23 +99,19 @@ function hi(name,age) {
   
   hightest(40, 9);
   */
-  
-  
-  function high(numberA,numberB){
-    if (numberA>numberB){
-      return numberA;
-    }
-    else {
-      return numberB;
-    }
+
+function high(numberA, numberB) {
+  if (numberA > numberB) {
+    return numberA;
+  } else {
+    return numberB;
   }
-  
-  const resultHigh = high(9,3);
-  console.log(resultHigh);
-  
-  
-  
-  /* 
+}
+
+const resultHigh = high(9, 3);
+console.log(resultHigh);
+
+/* 
   function numberConsole(a) {
     if (a > 0) {
       console.log(' Es un número positivo');
@@ -147,27 +126,25 @@ function hi(name,age) {
   numberConsole(-3);
   numberConsole(0); 
   */
-  
-  
-  function numberClass(a){
-    if(a < 0){
-      return a + ' Es un número negativo';
-    }
-    else if(a > 0) {
-      return a + ' Es un número positivo';
-    } else{
-      return 'Es 0';
-    }
+
+function numberClass(a) {
+  if (a < 0) {
+    return a + ' Es un número negativo';
+  } else if (a > 0) {
+    return a + ' Es un número positivo';
+  } else {
+    return 'Es 0';
   }
-  
-  let resultClass = numberClass(-5);
-  console.log(resultClass);
-  resultClass = numberClass(5);
-  console.log(resultClass);
-  resultClass = numberClass(0);
-  console.log(resultClass);
-  
-  /* 
+}
+
+let resultClass = numberClass(-5);
+console.log(resultClass);
+resultClass = numberClass(5);
+console.log(resultClass);
+resultClass = numberClass(0);
+console.log(resultClass);
+
+/* 
   function calification(numberA, numberB, numberC) {
     const media = (numberA + numberB + numberC) / 3;
   
@@ -182,22 +159,22 @@ function hi(name,age) {
   
   calification(8, 8, 5);
   */
-  
-  function numberCalification(numberA,numberB,numberC){
-    const average = (numberA + numberB + numberC) / 3;
-    if(average > 0 && average < 5){
-      return 'Suspenso';
-    } else if (average >= 5 && average < 8){
-      return 'Aprobado';
-    }else{
-      return 'Matricula de honor';
-    }
+
+function numberCalification(numberA, numberB, numberC) {
+  const average = (numberA + numberB + numberC) / 3;
+  if (average > 0 && average < 5) {
+    return 'Suspenso';
+  } else if (average >= 5 && average < 8) {
+    return 'Aprobado';
+  } else {
+    return 'Matricula de honor';
   }
-  
-  const resultCalification = numberCalification(3,5,2);
-  console.log(resultCalification);
-  
-  /* 
+}
+
+const resultCalification = numberCalification(3, 5, 2);
+console.log(resultCalification);
+
+/* 
   function receive(numberA, numberB, numberC) {
     if (numberA > numberB && numberA > numberC) {
       console.log('A es mayor');
@@ -210,21 +187,21 @@ function hi(name,age) {
   
   receive(5, 3, 1);
   */
-  
-  function nameReceive(numberA,numberB,numberC){
-    if(numberA > numberB && numberA > numberC){
-      return 'A es mayor';
-    }else if(numberB > numberC && numberB > numberA){
-      return 'B es mayor';
-    }else{
-      return 'C es mayor';
-    }
+
+function nameReceive(numberA, numberB, numberC) {
+  if (numberA > numberB && numberA > numberC) {
+    return 'A es mayor';
+  } else if (numberB > numberC && numberB > numberA) {
+    return 'B es mayor';
+  } else {
+    return 'C es mayor';
   }
-  
-  const resultReceive = nameReceive(9,9,5);
-  console.log(resultReceive)
-  
-  /* 
+}
+
+const resultReceive = nameReceive(9, 9, 5);
+console.log(resultReceive);
+
+/* 
   function number(a) {
     if (a % 5 === 0 && a % 3 === 0) {
       console.log('Es divisible por 3 y por 5');
@@ -240,27 +217,27 @@ function hi(name,age) {
   number(25);
   number(9);
   */
-  
-  function number(a) {
-    if ( a % 5 === 0 && a % 3 === 0){
-      return 'Es divisible por 3 y por 5';
-    }else if (a % 5 === 0){
-      return 'Es divisible por 5';
-    }else if (a % 3 === 0){
-      return 'Es divisible por 3';
-    }
+
+function number(a) {
+  if (a % 5 === 0 && a % 3 === 0) {
+    return 'Es divisible por 3 y por 5';
+  } else if (a % 5 === 0) {
+    return 'Es divisible por 5';
+  } else if (a % 3 === 0) {
+    return 'Es divisible por 3';
   }
-  
-  let resultNumber = number(30);
-  console.log(resultNumber);
-  
-  resultNumber = number(25);
-  console.log(resultNumber);
-  
-  resultNumber = number(6);
-  console.log(resultNumber);
-  
-  /* 
+}
+
+let resultNumber = number(30);
+console.log(resultNumber);
+
+resultNumber = number(25);
+console.log(resultNumber);
+
+resultNumber = number(6);
+console.log(resultNumber);
+
+/* 
   function evenOdd(a) {
     if (a % 2 === 0) {
       console.log(' Es un número par');
@@ -274,21 +251,21 @@ function hi(name,age) {
   
   
   */
-  
-  function nameEven(a){
-    if (a % 2 === 0){
-      return 'Es un número par';
-    }else{
-      return 'Es un número impar';
-    }
+
+function nameEven(a) {
+  if (a % 2 === 0) {
+    return 'Es un número par';
+  } else {
+    return 'Es un número impar';
   }
-  
-  resultEven = nameEven(10);
-  console.log(resultEven)
-  resultEven = nameEven(5);
-  console.log(resultEven)
-  
-  /* 
+}
+
+const resultEven = nameEven(10);
+console.log(resultEven);
+const resultEven2 = nameEven(5);
+console.log(resultEven2);
+
+/* 
   function year(a) {
     if ((a % 4 === 0 && a % 100 !== 0) || a % 400 === 0) {
       console.log(' Es un año bisiesto.');
@@ -300,22 +277,19 @@ function hi(name,age) {
   year(1900);
   year(2224);
   */
-  
-  function nameYear(a){
-  if ((a % 4 === 0 && a % 100 !== 0) || a % 400 === 0){
-      return 'Es un año bisiesto';
-    }else{
-      return 'No es un año bisiesto'
-    }
+
+function nameYear(a) {
+  if ((a % 4 === 0 && a % 100 !== 0) || a % 400 === 0) {
+    return 'Es un año bisiesto';
+  } else {
+    return 'No es un año bisiesto';
   }
-  
-  resultYear = nameYear(1900);
-  console.log(resultYear);        //No es un año bisiesto
-  resultYear = nameYear(2224);
-  console.log(resultYear);        //Es un año bisiesto
+}
 
-
-
+const resultYear = nameYear(1900);
+console.log(resultYear); //No es un año bisiesto
+const resultYear2 = nameYear(2224);
+console.log(resultYear2); //Es un año bisiesto
 
 /*  
 
@@ -331,19 +305,18 @@ threeDigit(200);
 
 */
 
-function threeDigit(numberOne){
-  if (numberOne >= 100 && numberOne <= 999){
+function threeDigit(numberOne) {
+  if (numberOne >= 100 && numberOne <= 999) {
     return 'Tiene 3 dígitos';
-  }else{
-    return 'No tiene 3 dígitos'
+  } else {
+    return 'No tiene 3 dígitos';
   }
 }
 
-resultThree = threeDigit(200);
+const resultThree = threeDigit(200);
 console.log(resultThree);
 
 //
-
 
 /* 
 function twoDigit(a,b){
@@ -358,16 +331,16 @@ twoDigit(20,10)
 
  */
 
-function twoDigit(a,b){
+function twoDigit(a, b) {
   if (a % b === 0) {
     return 'El primero es multiplo del segundo';
-  } else{
+  } else {
     return 'No es multiplo del segundo';
   }
 }
 
-resultTwo = twoDigit(12,4);
-console.log(resultTwo)
+const resultTwo = twoDigit(12, 4);
+console.log(resultTwo);
 
 /*  
 function doubleNumber(a,b){
@@ -384,15 +357,33 @@ doubleNumber(15,30);
 
 */
 
-function doubleNumber(a,b){
-  if (a === 2*b){
+function doubleNumber(a, b) {
+  if (a === 2 * b) {
     return a + ' es el doble ' + b;
-  }else if (b === 2*a){
+  } else if (b === 2 * a) {
     return b + ' es el doble de ' + a;
-  }else {
+  } else {
     return 'Ninguno es el doble del otro';
   }
 }
 
-resultDouble = doubleNumber(30,15);
+const resultDouble = doubleNumber(30, 15);
 console.log(resultDouble);
+
+function abcColum(a, b, c) {
+  if (a > b && a > c) {
+    console.log(a, b, c);
+  } else if (a > c && a > b) {
+    console.log(a, b, c);
+  } else if (b < a && b > c) {
+    console.log(a, b, c);
+  } else if (b > c && b < a) {
+    console.log(a, b, c);
+  } else if (c < a && c < b) {
+    console.log(a, b, c);
+  } else if (c < b && c < a) {
+    console.log(a, b, c);
+  }
+}
+abcColum(1, 3, 2);
+abcColum(3, 2, 1);
