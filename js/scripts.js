@@ -78,9 +78,8 @@ hello('Jorge', 32);
 function hi(name, age) {
   if (age < 18) {
     return 'Hola ' + name + ', eres menor de edad';
-  } else {
-    return 'Hola ' + name + ', eres mayor de edad';
   }
+  return 'Hola ' + name + ', eres mayor de edad';
 }
 
 const resultHi = hi('Xavier', 10);
@@ -132,9 +131,8 @@ function numberClass(a) {
     return a + ' Es un número negativo';
   } else if (a > 0) {
     return a + ' Es un número positivo';
-  } else {
-    return 'Es 0';
   }
+  return 'Es 0';
 }
 
 let resultClass = numberClass(-5);
@@ -385,5 +383,5 @@ function abcColum(a, b, c) {
     console.log(a, b, c);
   }
 }
-abcColum(1, 3, 2);
+abcColum(1, 2, 3);
 abcColum(3, 2, 1);
