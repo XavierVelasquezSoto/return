@@ -322,6 +322,61 @@ function hi(name,age) {
   }
   
   resultYear = nameYear(1900);
-  console.log(resultYear);
+  console.log(resultYear);        //No es un año bisiesto
   resultYear = nameYear(2224);
-  console.log(resultYear);
+  console.log(resultYear);        //Es un año bisiesto
+
+
+//
+
+/*  
+
+function threeDigit(numberOne){
+  if (numberOne >= 100 && numberOne <= 999 ){
+    console.log('Tiene 3 digitos');
+  }else{
+    console.log('No tiene 3 digitos');
+  }
+}
+
+threeDigit(200);
+
+*/
+
+function threeDigit(numberOne){
+  if (numberOne >= 100 && numberOne <= 999){
+    return 'Tiene 3 dígitos';
+  }else{
+    return 'No tiene 3 dígitos'
+  }
+}
+
+resultThree = threeDigit(200);
+console.log(resultThree);
+
+//
+
+
+/* 
+function twoDigit(a,b){
+  if (a % b === 0 ){
+    console.log('El primero es multiplo del segundo')
+  } else{
+    console.log('No es multiplo del segundo')
+  }
+}
+
+twoDigit(20,10)
+
+ */
+
+function twoDigit(a,b){
+  if (a % b === 0) {
+    return 'El primero es multiplo del segundo';
+  } else{
+    return 'No es multiplo del segundo';
+  }
+}
+
+resultTwo = twoDigit(12,4);
+console.log(resultTwo)
