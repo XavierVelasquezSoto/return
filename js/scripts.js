@@ -368,20 +368,52 @@ function doubleNumber(a, b) {
 const resultDouble = doubleNumber(30, 15);
 console.log(resultDouble);
 
-function abcColum(a, b, c) {
-  if (a > b && a > c) {
-    console.log(a, b, c);
-  } else if (a > c && a > b) {
-    console.log(a, b, c);
-  } else if (b < a && b > c) {
-    console.log(a, b, c);
-  } else if (b > c && b < a) {
-    console.log(a, b, c);
-  } else if (c < a && c < b) {
-    console.log(a, b, c);
-  } else if (c < b && c < a) {
-    console.log(a, b, c);
+//
+
+const threeNumbers = (numberA, numberB, numberC) =>{
+  if (numberA >= numberB && numberA >= numberC) {
+    console.log('Es mayor ' + numberA);
+  } else if (numberB >= numberC) {
+    console.log('Es mayor ' + numberB)
+  } else{
+    console.log('Es mayor ' + numberC)
   }
+  if (numberB >= numberA && numberB >= numberA) {
+    console.log('Es mayor ' + numberA);
+  } else if (numberB >= numberC) {
+    console.log('Es mayor ' + numberB)
+  } else{
+    console.log('Es mayor ' + numberC)
+  }
+
+  if (numberC >= numberB && numberC >= numberA) {
+    console.log('Es mayor ' + numberA);
+  } else if (numberB >= numberC) {
+    console.log('Es mayor ' + numberB)
+  } else{
+    console.log('Es mayor ' + numberC)
+  }
+
+
+
+
 }
-abcColum(1, 2, 3);
-abcColum(3, 2, 1);
+threeNumbers(1, 2, 3);
+threeNumbers(1, 3, 2);
+threeNumbers(2, 1, 3);
+threeNumbers(2, 3, 1);
+threeNumbers(3, 1, 2);
+threeNumbers(3, 2, 1);
+
+/* function abcColum(numberA, numberB, numberC) {
+  if (numberA >= numberB && a >= numberC) {
+    console.log('Es mayor ' + a);
+  } else if (numberB > numberA && b > numberC) {
+    console.log('Es mayor ' + b)
+  } else if(numberC > numberA && numberC > b){
+    console.log('Es mayor ' + numberC)
+  }
+
+}
+abcColum(1, 2, 3); */
+
